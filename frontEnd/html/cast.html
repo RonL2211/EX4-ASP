@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cast Management</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    <!-- <script src="../js/app.js"></script>    -->
+    <script src="../js/cast.js"></script>
+    
+   
+    
+</head>
+<body>
+    <header>
+        <h1>Cast Management</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">All Movies</a></li>
+                <li><a href="wishlist.html">Wish List</a></li>
+                <li><a href="cast-form.html" class="active">Cast Form</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section id="cast-form">
+            <h2>Add a Cast Member</h2>
+            <form id="add-cast-form">
+                <label for="cast-id">ID:</label>
+                <input type="text" id="cast-id" name="id" required minlength="6">
+
+                <label for="cast-name">Name:</label>
+                <input type="text" id="cast-name" name="name" required minlength="3">
+
+                <label for="cast-role">Role:</label>
+                <input type="text" id="cast-role" name="role" required>
+
+                <label for="cast-date">Date of Birth:</label>
+                <input type="date" id="cast-date" name="date" min="1900-01-01" max="2010-12-31" required>
+
+                <label for="cast-country">Country:</label>
+                <input type="text" id="cast-country" name="country" required>
+
+                <label for="cast-photoUrl">Photo URL:</label>
+                <input type="url" id="cast-photoUrl" name="photoUrl" required>
+
+                <button type="submit" id="add-cast-btn">Add Cast Member</button>
+            </form>
+        </section>
+
+        <section id="cast-list">
+            <h2>Cast Members</h2>
+            <div id="cast-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Movie App</p>
+    </footer>
+</body>
+</html>

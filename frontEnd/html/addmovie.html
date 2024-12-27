@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Management</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="../js/movie.js"></script> -->
+     <script src="../js/addmovie.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Movie Management</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">All Movies</a></li>
+                <li><a href="wishlist.html">Wish List</a></li>
+                <li><a href="addmovie.html" class="active">Add Movie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="movie-form">
+            <h2>Add a Movie</h2>
+            <form id="add-movie-form">
+                <!-- <label for="movie-id">ID:</label>
+                <input type="number" id="movie-id" name="id" required> -->
+
+                <label for="movie-title">Title:</label>
+                <input type="text" id="movie-title" name="title" required minlength="2">
+
+                <label for="movie-rating">Rating:</label>
+                <input type="number" step="0.1" id="movie-rating" name="rating" min="0" max="10" required>
+
+                <label for="movie-income">Income:</label>
+                <input type="number" id="movie-income" name="income" required>
+
+                <label for="movie-releaseYear">Release Year:</label>
+                <input type="number" id="movie-releaseYear" name="releaseYear" min="1900" max="2100" required>
+
+                <label for="movie-duration">Duration (minutes):</label>
+                <input type="number" id="movie-duration" name="duration" required>
+
+                <label for="movie-language">Language:</label>
+                <input type="text" id="movie-language" name="language" required>
+
+                <label for="movie-description">Description:</label>
+                <textarea id="movie-description" name="description" required></textarea>
+
+                <label for="movie-genre">Genre:</label>
+                <input type="text" id="movie-genre" name="genre" required>
+
+                <label for="movie-photoUrl">Photo URL:</label>
+                <input type="url" id="movie-photoUrl" name="photoUrl" required>
+
+                <button type="submit" id="add-movie-btn">Add Movie</button>
+            </form>
+        </section>
+
+        <section id="movie-list">
+            <h2>Movies</h2>
+            <div id="movie-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Movie App</p>
+    </footer>
+</body>
+</html>
