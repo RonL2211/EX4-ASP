@@ -1,6 +1,8 @@
 
-const wishListApi = "https://localhost:7049/api/Movie/wishlist/"  + localStorage.getItem("userId"); 
-const moviesApi = "https://localhost:7049/api/Movie";
+// const wishListApi = "https://localhost:7049/api/Movie/wishlist/"  + localStorage.getItem("userId"); 
+const wishListApi = "https://proj.ruppin.ac.il/bgroup1/test2/tar1/api/Movie/wishlist/"  + localStorage.getItem("userId"); 
+// const moviesApi = "https://localhost:7049/api/Movie";
+const moviesApi = "https://proj.ruppin.ac.il/bgroup1/test2/tar1/api/Movie";
 
 
 $(document).ready(() => {

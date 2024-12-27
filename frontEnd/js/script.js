@@ -1,8 +1,9 @@
-// API Base URL
-// const apiBaseUrl = "https://localhost:7049/api/User";
-const moviesApi = "https://localhost:7049/api/Movie";
-const castsApi = "https://localhost:7049/api/Cast";
-const usersApi = "https://localhost:7049/api/User";
+// const moviesApi = "https://localhost:7049/api/Movie";
+const moviesApi = "https://proj.ruppin.ac.il/bgroup1/test2/tar1/api/Movie";
+// const castsApi = "https://localhost:7049/api/Cast";
+const castsApi = "https://proj.ruppin.ac.il/bgroup1/test2/tar1/api/Cast";
+// const usersApi = "https://localhost:7049/api/User";
+const usersApi = "https://proj.ruppin.ac.il/bgroup1/test2/tar1/api/User";
 $(document).ready(() => {
 
     localStorage.clear();

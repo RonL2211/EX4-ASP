@@ -1,6 +1,8 @@
 
-const usersApi = "https://localhost:7049/api/User";
-const moviesApi = "https://localhost:7049/api/Movie";
+// const usersApi = "https://localhost:7049/api/User";
+const usersApi = "https://proj.ruppin.ac.il/bgroup1/test2/tar1/api/User";
+// const moviesApi = "https://localhost:7049/api/Movie";
+const moviesApi = "https://proj.ruppin.ac.il/bgroup1/test2/tar1/api/Movie";
 
 
 $(document).ready(() => {
